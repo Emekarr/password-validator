@@ -7,7 +7,7 @@ import {
 describe("PasswordValidator Types", () => {
   describe("ValidationRule", () => {
     it("should create a valid rule function", () => {
-      const demoRule: ValidationRule = (opts: RuleOptions<number>) => {
+      const demoRule: ValidationRule<number> = (opts: RuleOptions<number>) => {
         return (password: string) => {
           if (password.length < opts.value) {
             throw new Error(
@@ -54,7 +54,7 @@ describe("PasswordValidator Types", () => {
         customErrMsg: "custom error message",
       };
 
-      const rule: ValidationRule = (opts) => (password) => {
+      const rule: ValidationRule<number> = (opts) => (password) => {
         if (password.length < opts.value) {
           throw new Error(opts.customErrMsg || "default error");
         }
@@ -69,7 +69,7 @@ describe("PasswordValidator Types", () => {
         value: 8,
       };
 
-      const rule: ValidationRule = (opts) => (password) => {
+      const rule: ValidationRule<number> = (opts) => (password) => {
         if (password.length < opts.value) {
           throw new Error(opts.customErrMsg || "default error");
         }

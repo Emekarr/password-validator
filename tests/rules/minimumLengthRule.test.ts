@@ -13,7 +13,7 @@ describe("minLengthRule", () => {
 
   it("should throw an error when password length is less than the minimum", () => {
     const rule = minLengthRule({ value: 5 });
-    expect(() => rule("1234")).toThrow("minimum password length should be 8");
+    expect(() => rule("1234")).toThrow("minimum password length should be 5");
   });
 
   it("should use the default error message when no custom message is provided", () => {

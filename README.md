@@ -54,7 +54,7 @@ try {
 
 ## CONTRIBUTING
 
-To add more rules to the PasswordValidator create the rules file in the rules module located in `./src/rules` and implement the validation rule which should match the Function Signature `ValidationRule`. Export this new rule using `export default newRule`  and import it in `./src/index` and include it in the default object which is exported.
+To add more rules to the PasswordValidator create the rules file in the rules module located in `./src/rules` and implement the validation rule which should match the Function Signature `ValidationRule`. Export this new rule using `export default newRule` and import it in `./src/index` and include it in the default object which is exported.
 
 ## PLEASE NOTE
 
@@ -63,7 +63,7 @@ To add more rules to the PasswordValidator create the rules file in the rules mo
 
 ## SET UP GUIDE
 
-- Clone the repositry from github using `git clone https://github.com/Emekarr/niyo.git` and cd into the folder
+- Clone the repositry from github using `git clone https://github.com/Emekarr/password-validator` and cd into the folder
 
 - Use `nvm` to set your node version to `18.18.2` using the command`nvm use 18.18.2`.
 

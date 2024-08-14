@@ -1,6 +1,6 @@
 import { RuleOptions, ValidationRule } from "../types";
 
-const maxLengthRule: ValidationRule =
+const maxLengthRule: ValidationRule<number> =
   (opts: RuleOptions<number>) => (password: string) => {
     if (opts.value <= 0)
       throw new Error("maximum length cannot be equal to or less than 0");
